@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - EnemyBlock
+  - Enemy
+  - Mushroom
+  - Health
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Enemy
+  - EnemyBlock
+  - Player
+  - Platform
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Sky
+    uniqueID: 1468782747
+    locked: 0
+  - name: Sky Detail 1
+    uniqueID: 2623263099
+    locked: 0
+  - name: Sky Detail 2
+    uniqueID: 3092145683
+    locked: 0
+  - name: Sky Detail 3
+    uniqueID: 342749777
+    locked: 0
+  - name: Light Forest
+    uniqueID: 2422480627
+    locked: 0
+  - name: Medium Forest
+    uniqueID: 3831177197
+    locked: 0
+  - name: Border
+    uniqueID: 819682025
+    locked: 0
+  - name: Dark Forest
+    uniqueID: 1752629101
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 2116320123
+    locked: 0
