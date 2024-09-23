@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - Mushroom
   - Health
+  - Key
+  - LockedDoor
   layers:
   - Default
   - TransparentFX

@@ -41,6 +41,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Info.keysCollected = 0;
+
         canMove = true;
         currentHealth = startingHealth;
         mushroomText.text = "" + Info.mushroomsCollected;
@@ -99,6 +101,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.CompareTag("LockedDoor") && Info.keysCollected > 0)
+        {
+            Info.keysCollected--;
+            Destroy(other.gameObject);
+        }
+
+        //
+        //
+        //
+
         if (other.CompareTag("Mushroom"))
         {
             Destroy(other.gameObject);
@@ -113,7 +125,13 @@ public class PlayerMovement : MonoBehaviour
             RestoreHealth(other.gameObject);
         }
 
+        if (other.CompareTag("Key"))
+        {
+            Info.keysCollected++;
+            Destroy(other.gameObject);
+        }
     }
+
     private void FlipSprite(bool direction)
     {
         rend.flipX = direction;

@@ -20,6 +20,7 @@ public class QuestChecker : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            questGoal = 0;
             if (Info.mushroomsCollected >= questGoal)
             {
                 dialogueBox.SetActive(true);
