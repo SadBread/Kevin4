@@ -10,6 +10,8 @@ public class Checkpoint : MonoBehaviour
 
     private Rigidbody2D rgbd;
 
+    private bool trig = true;
+
     void Start()
     {
         rgbd = GetComponent<Rigidbody2D>();
@@ -17,9 +19,10 @@ public class Checkpoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && trig)
         {
             target.transform.position = new Vector2(rgbd.position.x, rgbd.position.y);
+            trig = false;
         }
     }
 }
