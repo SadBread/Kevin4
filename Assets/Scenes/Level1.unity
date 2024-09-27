@@ -5587,8 +5587,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Kevin!\n\nCould you please help me collect some mushrooms for tonight?
-    \n10 should be enough.\n\nWhen you collect 10 you can put them in the chest and
-    you will be finished!"
+    \nThe more the better!\n\nWhen you collect atleast 10 you can put them in the
+    chest and you will be finished!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 021604728b642b8409be7ae986573709, type: 2}
   m_sharedMaterial: {fileID: 5189764522261101530, guid: 021604728b642b8409be7ae986573709, type: 2}
