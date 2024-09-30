@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Image fillColor;
     [SerializeField] private Color goodHealth, badHealth;
     [SerializeField] private TMP_Text mushroomText;
+    [SerializeField] private TMP_Text keyText;
 
     private float horizontalValue;
     private float rayDistance = 0.25f;
@@ -46,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
         canMove = true;
         currentHealth = startingHealth;
         mushroomText.text = "" + Info.mushroomsCollected;
+        keyText.text = "" + Info.keysCollected;
         rgbd = GetComponent<Rigidbody2D>();
         rend = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -75,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
         if ((Input.GetButtonDown("Jump") || jumpBuffer > 0) && (coyoteTime > 0 || CheckIfGrounded()))
         {
+            audioSource.pitch = Random.Range(0.8f, 1.2f);
             Jump();
         }
 
@@ -104,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("LockedDoor") && Info.keysCollected > 0)
         {
             Info.keysCollected--;
+            keyText.text = "" + Info.keysCollected;
             Destroy(other.gameObject);
         }
 
@@ -127,8 +131,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (other.CompareTag("Key"))
         {
-            Info.keysCollected++;
             Destroy(other.gameObject);
+            Info.keysCollected++;
+            keyText.text = "" + Info.keysCollected;
+            audioSource.PlayOneShot(pickupSound, 0.05f);
+            audioSource.pitch = 2f;
         }
     }
 

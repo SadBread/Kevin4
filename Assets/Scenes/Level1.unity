@@ -1337,17 +1337,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1390219500}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &347499076 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 521937589007321031, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
-  m_PrefabInstance: {fileID: 2133525317360609217}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &370193025
 GameObject:
   m_ObjectHideFlags: 0
@@ -5587,7 +5576,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Kevin!\n\nCould you please help me collect some mushrooms for tonight?
-    \nThe more the better!\nWhen you collect atleast 10 you can put them in the\r
+    \nThe more the better!\nWhen you collect atleast 5 you can put them in the\r
     chest and you will be finished!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 021604728b642b8409be7ae986573709, type: 2}
@@ -7639,7 +7628,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 509977900}
   finishedText: {fileID: 841279192}
   unfinishedText: {fileID: 454562456}
-  questGoal: 10
+  questGoal: 5
   levelToLoad: 2
 --- !u!61 &1202546716
 BoxCollider2D:
@@ -8699,17 +8688,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6688701442071608580, guid: 35a21887b87a8ec40940f79010a9e890, type: 3}
   m_PrefabInstance: {fileID: 1872545744}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1533321262 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8687737907187911692, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
-  m_PrefabInstance: {fileID: 2133525317360609217}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1538046681
 GameObject:
   m_ObjectHideFlags: 0
@@ -9320,17 +9298,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35a21887b87a8ec40940f79010a9e890, type: 3}
---- !u!114 &1691027580 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4119350783821814668, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
-  m_PrefabInstance: {fileID: 2133525317360609217}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1697415930
 GameObject:
   m_ObjectHideFlags: 0
@@ -10163,6 +10130,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35a21887b87a8ec40940f79010a9e890, type: 3}
+--- !u!114 &1893804314 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8392006004512227933, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
+  m_PrefabInstance: {fileID: 2133525317360609217}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1907287609
 GameObject:
   m_ObjectHideFlags: 0
@@ -12547,6 +12525,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1661976351733910410, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661976351733910410, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1944189055216403411, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -12639,11 +12625,48 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8757775252069424601, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
+--- !u!114 &2133525317360609218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3754609215849580916, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
+  m_PrefabInstance: {fileID: 2133525317360609217}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2133525317360609219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3808344936372192382, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
+  m_PrefabInstance: {fileID: 2133525317360609217}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2133525317360609220 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5018161860422482938, guid: bf2e1d55f0dad724fa720e9dd3d005e5, type: 3}
+  m_PrefabInstance: {fileID: 2133525317360609217}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2845633431009213668
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12653,17 +12676,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4936981916706042290, guid: 2c3cfc5aa6d622640a3e1bac427ffbac, type: 3}
+      propertyPath: keyText
+      value: 
+      objectReference: {fileID: 2133525317360609218}
+    - target: {fileID: 4936981916706042290, guid: 2c3cfc5aa6d622640a3e1bac427ffbac, type: 3}
       propertyPath: fillColor
       value: 
-      objectReference: {fileID: 1691027580}
+      objectReference: {fileID: 2133525317360609220}
     - target: {fileID: 4936981916706042290, guid: 2c3cfc5aa6d622640a3e1bac427ffbac, type: 3}
       propertyPath: healthSlider
       value: 
-      objectReference: {fileID: 347499076}
+      objectReference: {fileID: 1893804314}
     - target: {fileID: 4936981916706042290, guid: 2c3cfc5aa6d622640a3e1bac427ffbac, type: 3}
       propertyPath: mushroomText
       value: 
-      objectReference: {fileID: 1533321262}
+      objectReference: {fileID: 2133525317360609219}
     - target: {fileID: 4936981916706042290, guid: 2c3cfc5aa6d622640a3e1bac427ffbac, type: 3}
       propertyPath: spawnPosition
       value: 
