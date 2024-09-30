@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// 
+/// </summary>
 public class QuestGiver : MonoBehaviour
 {
     [SerializeField] private GameObject textPopUp;
