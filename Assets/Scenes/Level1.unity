@@ -5576,8 +5576,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Kevin!\n\nCould you please help me collect some mushrooms for tonight?
-    \nThe more the better!\nWhen you collect atleast 5 you can put them in the\r
-    chest and you will be finished!"
+    \nThe more the better! When you collect atleast 5 you can put them in the\r\nchest
+    and you will be finished!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 021604728b642b8409be7ae986573709, type: 2}
   m_sharedMaterial: {fileID: 5189764522261101530, guid: 021604728b642b8409be7ae986573709, type: 2}
@@ -5604,7 +5604,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.45
+  m_fontSize: 50.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6539,7 +6539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &996250883
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6557,8 +6557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: 358.5}
-  m_SizeDelta: {x: 705.6, y: 347.6}
+  m_AnchoredPosition: {x: -10, y: 498.6}
+  m_SizeDelta: {x: 705.6, y: 471.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &996250884
 MonoBehaviour:
